@@ -1,0 +1,290 @@
+
+/* FONT */
+@font-face {
+    font-family: "Alexana";
+    src: url("font/Alexana.ttf");
+}
+
+@font-face {
+    font-family: "Futured";
+    src: url("font/Futured.TTF");
+}
+
+@font-face {
+    font-family: "MadeFuture";
+    src: url("font/MADE-Future.otf");
+}
+
+/* BODY */
+
+body {
+    background-image: url(../images/3618264.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+
+}
+
+/* CARD */
+
+.card {
+    width: 500px;
+    height: 120%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-color: rgba(248, 246, 246, 0.164);
+    box-shadow: 10px 11px 25px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 0px 10px 0px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content-card {
+
+    margin: 0 auto;
+    width: 250px;
+    height: 500px;
+}
+
+/* TEXT */
+
+.title {
+    text-transform: uppercase;
+    font-family: "Alexana";
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    color: white;
+    font-size: 2em;
+}
+
+.message-error {
+
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    background-color: red;
+    width: 100%;
+}
+
+.text-name {
+
+    font-family: "MadeFuture";
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 30px;
+}
+
+.text {
+
+    font-family: "MadeFuture";
+    text-align: center;
+    color: white;
+    font-size: 27px;
+    word-spacing: 2px;
+    margin-bottom: 20px;
+
+}
+
+.profil-information {
+
+    font-family: "MadeFuture";
+    color: #FFD700;
+    line-height: 2em;
+    list-style: none;
+    margin-left: -50px;
+
+}
+
+.link {
+
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    word-spacing: 2px;
+}
+
+.link-lost-password{
+
+    font-family: "MadeFuture";
+    color: white;
+    margin-top: 50px;
+}
+
+/* BUTTON */
+
+.button_blue {
+
+    font-family: "Futured";
+    color: #FFFFFF;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    background: #3D94F6;
+    background-image: -webkit-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -moz-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -ms-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -o-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: linear-gradient(to bottom, #3D94F6, #1E62D0);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+
+    box-shadow: 1px 1px 20px 0px #000000;
+    -webkit-box-shadow: 1px 1px 20px 0px #000000;
+    -moz-box-shadow: 1px 1px 20px 0px #000000;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid #337FED 1px;
+
+    cursor: pointer;
+
+}
+
+.button_blue:hover {
+
+    border: solid #337FED 1px;
+    background: #1E62D0;
+    background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: linear-gradient(to bottom, #1E62D0, #3D94F6);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+
+/* INPUT */
+
+.input {
+
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    border-color: #cccccc;
+    border-style: solid;
+    box-sizing: border-box;
+    border-width: 3px;
+    border-radius: 22px;
+    background-color: #f0e4f0;
+    box-shadow: 1px 1px 6px 0px rgba(42, 42, 42, .75);
+    margin-top: 20px;
+    padding: 7px 0;
+}
+
+.input:focus {
+
+    outline: none;    
+}
+
+
+/* ANIMATION */
+
+.animated {
+    text-align: center;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+/*ANIMATION DEFINITION*/
+@-webkit-keyframes rollIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+        transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes rollIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+        -ms-transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+        transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none
+    }
+}
+
+.rollIn {
+    -webkit-animation-name: rollIn;
+    animation-name: rollIn
+}
+
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width : 600px) {
+
+    .card {
+
+        width: 300px;
+        height: 100%;
+        background-color: transparent;
+        box-shadow: unset;
+
+    }
+
+    .content-card {
+
+        width: 200px;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+
+    .title {
+
+        font-size: 25px;
+        margin-top: -50px;
+
+    }
+
+    .profil-information {
+
+        margin-bottom: 10px;
+        margin-left: -100px;
+        color: #FFD700;
+    }
+
+
+}
+>>>>>>> modification
